@@ -1,0 +1,489 @@
+2024-05-31T17:40:21.088156100 - register
+2024-05-31T17:40:35.233196200 - register
+2024-05-31T17:40:49.595529200 - login
+2024-05-31T17:41:00.059397100 - lcefea
+2024-05-31T17:41:03.423976 - login
+2024-05-31T17:41:08.553954100 - logout
+2024-05-31T17:41:11.186775300 - login
+2024-05-31T17:41:25.241335200 - login\
+2024-05-31T17:41:27.620525100 - login
+2024-05-31T17:41:36.519798200 - login
+2024-05-31T17:41:42.374227700 - promote
+2024-05-31T17:41:50.694453900 - auditlog
+2024-05-31T17:42:11.019254900 - logout
+2024-05-31T17:42:12.788830600 - login
+2024-05-31T17:42:22.943459700 - register
+2024-05-31T17:42:34.728346800 - loadcsv
+2024-05-31T17:51:52.004499200 - loadcsv
+2024-05-31T17:53:34.104165 - loadcsv
+2024-05-31T17:54:21.971673500 - loadjson
+2024-05-31T17:55:48.369367300 - loadjson
+2024-05-31T17:59:57.511667600 - loadjson
+2024-05-31T18:00:25.443221 - login
+2024-05-31T18:00:42.026915 - exit
+2024-05-31T18:00:50.893714800 - loadcsv
+2024-05-31T18:01:22.897819300 - savejson
+2024-05-31T18:02:43.386999900 - login
+2024-05-31T18:03:22.370013300 - loadjson
+2024-05-31T18:03:34.619879100 - login
+2024-05-31T18:03:43.520924900 - login
+2024-05-31T18:03:50.528151700 - logout
+2024-05-31T18:03:53.324688500 - login
+2024-05-31T18:04:05.521985700 - login
+2024-05-31T18:04:19.073843900 - logout
+2024-05-31T18:04:53.129542100 - loadjson
+2024-05-31T18:06:39.360347800 - savejson
+2024-05-31T18:07:56.900530 - register
+2024-05-31T18:08:04.418727800 - login
+2024-05-31T18:08:11.013640500 - auditlog
+2024-05-31T18:08:56.026358400 - loadcsv
+2024-05-31T18:14:11.887026500 - loadcsv
+2024-05-31T18:14:13.767065500 - john,password123,false
+2024-05-31T18:14:13.767065500 - mary,pass456,true
+2024-05-31T18:14:13.768217400 - alice,securePass,true
+2024-05-31T18:14:43.054084300 - loadcsv
+2024-05-31T18:17:23.752896400 - loadcsv
+2024-05-31T18:17:25.095237 - john,password123,false
+2024-05-31T18:17:25.096235700 - mary,pass456,true
+2024-05-31T18:17:25.096235700 - alice,securePass,true
+2024-05-31T18:17:38.280174400 - loadcsv
+2024-05-31T18:19:56.772957100 - loadcsv
+2024-05-31T18:20:37.356022500 - login
+2024-05-31T18:21:02.578928800 - login
+2024-05-31T18:21:24.619043700 - login
+2024-05-31T18:21:57.176643200 - login
+2024-05-31T18:22:18.254166 - savecsv
+2024-05-31T18:23:00.244618 - savecsv
+2024-05-31T18:23:32.874620500 - savecsv
+2024-05-31T18:28:25.021721100 - loadcsv
+2024-05-31T18:28:40.499607300 - savecsv
+2024-05-31T18:29:13.667119400 - savecsv
+2024-05-31T18:29:34.055569700 - loadcsv
+2024-05-31T18:29:48.673286600 - savecsv
+2024-05-31T18:30:20.212496100 - login
+2024-05-31T18:44:19.307314300 - loadcsv
+2024-05-31T18:44:46.750267500 - login
+2024-05-31T18:44:58.385371400 - login
+2024-05-31T18:48:05.809703400 - cleaer
+2024-05-31T18:49:29.885859300 - loadcsv
+2024-05-31T18:49:44.270759300 - login
+2024-05-31T18:49:55.537506300 - login
+2024-05-31T18:57:04.966716100 - loadcsv
+2024-05-31T18:57:12.681393300 - login
+2024-05-31T18:57:37.677975500 - savecsv
+2024-05-31T18:57:58.823181100 - savecsv
+2024-05-31T18:58:51.419947600 - login
+2024-05-31T18:59:19.898860400 - savejson
+2024-05-31T19:01:47.784664400 - loadcsv
+2024-05-31T19:01:57.548981300 - loadcsv
+2024-05-31T19:01:58.331370900 -     try (CSVReader reader = new CSVReader(new FileReader(csvFilePath))) {
+2024-05-31T19:01:58.331370900 -         String[] nextLine;
+2024-05-31T19:01:58.332367200 -         // Skip the header line
+2024-05-31T19:01:58.332367200 -         reader.readNext();
+2024-05-31T19:01:58.332367200 -         while ((nextLine = reader.readNext()) != null) {
+2024-05-31T19:01:58.333352200 -             String username = nextLine[0].trim(); // Elimină spațiile din ambele capete ale șirului
+2024-05-31T19:01:58.333352200 -             String password = nextLine[1].trim(); // Elimină spațiile din ambele capete ale șirului
+2024-05-31T19:01:58.334363200 -             boolean isAdmin = Boolean.parseBoolean(nextLine[2].trim()); // Elimină spațiile din ambele capete ale șirului
+2024-05-31T19:01:58.334363200 -             User user = new User(username, password, isAdmin);
+2024-05-31T19:01:58.334363200 -             users.add(user);
+2024-05-31T19:01:58.335352700 -         }
+2024-05-31T19:01:58.335352700 -     } catch (IOException e) {
+2024-05-31T19:01:58.335352700 -         e.printStackTrace();
+2024-05-31T19:01:58.336353600 -     } catch (CsvValidationException e) {
+2024-05-31T19:01:58.336353600 -         throw new RuntimeException(e);
+2024-05-31T19:01:58.336353600 -     }
+2024-05-31T19:01:58.337350900 - }
+2024-05-31T19:02:07.421830700 - loadcsv
+2024-05-31T19:02:15.266432300 - john
+2024-05-31T19:02:18.834971400 - login
+2024-05-31T19:02:53.066850700 - loadcsv
+2024-05-31T19:03:20.989537200 - savecsv
+2024-05-31T19:54:25.228474700 - register
+2024-05-31T19:54:29.542290100 - login
+2024-05-31T19:56:17.693755400 - register
+2024-05-31T19:56:43.110826600 - register\
+2024-05-31T19:56:48.508462400 - register
+2024-05-31T19:58:12.984803900 - register
+2024-05-31T19:58:36.554009800 - fdfds
+2024-05-31T19:58:45.558469900 - login
+2024-05-31T19:59:08.886682900 - register
+2024-05-31T19:59:13.650150300 - login
+2024-05-31T19:59:20.700723 - create song
+2024-05-31T19:59:39.403956900 - list songs
+2024-05-31T19:59:48.150919800 - create song
+2024-05-31T20:00:09.214745400 - list songs
+2024-05-31T20:40:09.750870700 - register
+2024-05-31T20:40:21.293268300 - login
+2024-05-31T20:40:35.761844 - list playlits
+2024-05-31T20:40:44.438598 - list playlists
+2024-05-31T20:40:50.946890300 - list songs
+2024-05-31T20:41:07.715984100 - create song
+2024-05-31T20:41:21.111000200 - list songs
+2024-05-31T20:41:32.747777900 - create playlist
+2024-05-31T20:41:45.645367700 - list playlists
+2024-05-31T20:42:18.005869700 - add song to playlist
+2024-05-31T20:42:46.271434 - list playlist
+2024-05-31T20:42:51.948559 - list playlist
+2024-05-31T20:42:58.553370300 - list playlists
+2024-05-31T22:39:42.292920500 - list playlists
+2024-05-31T22:58:41.078165300 - register
+2024-05-31T23:23:17.960356800 - register
+2024-05-31T23:32:51.548525400 - register
+2024-05-31T23:33:06.522133200 - login
+2024-05-31T23:35:22.727522900 - register
+2024-05-31T23:35:33.581773300 - login
+2024-05-31T23:35:44.928757700 - login
+2024-05-31T23:54:29.960886400 - register
+2024-06-01T00:12:51.974924 - register
+2024-06-01T00:15:37.813258700 - register
+2024-06-01T00:15:47.783840500 - register
+2024-06-01T00:16:10.005763600 - login
+2024-06-01T00:17:39.873848200 - register
+2024-06-01T00:18:00.259521500 - loadjson
+2024-06-01T00:19:03.943371400 - login
+2024-06-01T00:19:22.007883800 - exit
+2024-06-01T00:21:46.711588100 - loadjson
+2024-06-01T00:22:11.892609 - loadjson
+2024-06-01T00:22:26.647811800 - loadjson
+2024-06-01T00:27:15.211224800 - savejson
+2024-06-01T00:29:10.720055300 - loadjson
+2024-06-01T00:30:03.320481600 - savejson
+2024-06-01T00:30:52.112268200 - savejson
+2024-06-01T00:31:28.072718500 - savejson
+2024-06-01T00:32:22.033312800 - loadjson
+2024-06-01T00:38:11.154409 - loadjson
+2024-06-01T00:38:29.529287700 - savejson
+2024-06-01T00:41:44.322526 - login
+2024-06-01T00:41:49.854557900 - logout
+2024-06-01T00:41:57.106392900 - savejson
+2024-06-01T00:42:07.252293200 - savejson
+2024-06-01T00:45:09.654423100 - savejson
+2024-06-01T00:49:57.065525300 - savejson
+2024-06-01T00:51:12.123482800 - savejson
+2024-06-01T00:51:37.867894300 - loadjson
+2024-06-01T00:52:57.730942 - loadjson
+2024-06-01T01:02:01.092858700 - register
+2024-06-01T13:12:35.120695 - login
+2024-06-01T13:12:58.240762400 - list songs
+2024-06-01T13:13:06.347617400 - create song
+2024-06-01T13:13:22.201092600 - list songs
+2024-06-01T13:13:46.625504300 - login
+2024-06-01T13:14:06.024035400 - login
+2024-06-01T13:14:16.583069400 - list songs
+2024-06-01T13:19:37.536922100 - list playlists
+2024-06-01T13:19:52.709051100 - create playlist
+2024-06-01T13:20:12.150991200 - list playlists
+2024-06-01T13:20:18.083607700 - logout
+2024-06-01T13:20:29.776874100 - login
+2024-06-01T13:20:38.157565200 - list playlists
+2024-06-01T13:20:47.126613500 - add song to playlist
+2024-06-01T13:21:34.410178600 - logout
+2024-06-01T13:21:36.719484400 - login
+2024-06-01T13:21:41.570735400 - login
+2024-06-01T13:21:54.069786200 - list playlists
+2024-06-01T13:21:59.975837500 - add song to playlist
+2024-06-01T13:22:19.282344500 - list playlists
+2024-06-01T13:55:36.157784800 - login
+2024-06-01T13:55:48.677036700 - logout
+2024-06-01T13:55:51.395507500 - login
+2024-06-01T13:55:56.362444600 - list songs
+2024-06-01T13:56:48.399836900 - logout
+2024-06-01T13:56:50.507174200 - login
+2024-06-01T13:57:13.372028 - auditlog
+2024-06-01T13:58:41.060149700 - list songs
+2024-06-01T13:58:48.007924700 - create playlist
+2024-06-01T13:59:10.466117 - list playlists
+2024-06-01T13:59:18.560603100 - list songs
+2024-06-01T13:59:26.071164200 - create songs
+2024-06-01T13:59:30.580415 - create song
+2024-06-01T14:03:54.385878100 - login
+2024-06-01T14:04:01.335354200 - list songs
+2024-06-01T14:22:32.909957700 - login
+2024-06-01T14:22:35.132207600 - 
+2024-06-01T14:22:39.958207 - list songs
+2024-06-01T14:24:40.791044400 - logout
+2024-06-01T14:24:42.437595100 - login
+2024-06-01T14:25:05.884030300 - create song
+2024-06-01T14:25:18.514128200 - list songs
+2024-06-01T14:25:29.683733700 - create song
+2024-06-01T14:25:58.343264400 - list songs
+2024-06-01T14:26:28.102582900 - login
+2024-06-01T14:26:34.383549800 - list songs
+2024-06-01T14:26:41.325404700 - create song
+2024-06-01T14:26:49.993827 - list songs
+2024-06-01T14:27:51.529618 - list songs
+2024-06-01T14:28:02.589710700 - login
+2024-06-01T14:28:08.452522800 - list songs
+2024-06-01T14:28:51.339428100 - login
+2024-06-01T14:28:58.173197700 - list songs
+2024-06-01T14:29:09.823895700 - create song
+2024-06-01T14:29:25.910811200 - list songs
+2024-06-01T14:29:31.652583300 - create song
+2024-06-01T14:29:48.773084100 - list songs
+2024-06-01T14:30:23.635580900 - login
+2024-06-01T14:30:29.048336300 - list songs
+2024-06-01T14:36:45.494418300 - mary
+2024-06-01T14:36:48.242059700 - login
+2024-06-01T14:36:54.844446100 - list songs
+2024-06-01T14:37:00.198730800 - create song
+2024-06-01T14:37:09.427310500 - list songs
+2024-06-01T14:37:21.001828800 - create song
+2024-06-01T14:37:31.504614100 - list songs
+2024-06-01T14:37:48.255365500 - login
+2024-06-01T14:37:52.609838200 - list song
+2024-06-01T14:37:56.666739600 - list songs
+2024-06-01T14:39:23.927730800 - logut
+2024-06-01T14:39:28.851941100 - logout
+2024-06-01T14:39:30.649195 - login
+2024-06-01T14:39:37.302615900 - auditlog
+2024-06-01T14:46:13.255047700 - [Anonymous] -> login
+2024-06-01T14:46:22.174091500 - [gabi] -> list songs
+2024-06-01T14:46:27.205958100 - [gabi] -> list playlists
+2024-06-01T14:46:35.744831600 - [gabi] -> create playlist
+2024-06-01T14:46:47.014436200 - [gabi] -> list songs
+2024-06-01T14:46:53.465198300 - [gabi] -> add song to playlist
+2024-06-01T14:47:12.190775200 - [gabi] -> list playlists
+2024-06-01T14:47:23.568961600 - [gabi] -> logout
+2024-06-01T14:47:25.517135700 - [Anonymous] -> login
+2024-06-01T14:47:31.424256500 - [mary] -> auditlog
+2024-06-01T14:49:00.128687900 - [mary] -> auditlog
+2024-06-01T14:49:17.907280800 - [Anonymous] -> login
+2024-06-01T14:49:26.052577300 - [Anonymous] -> login
+2024-06-01T14:49:33.155765200 - [mary] -> auuditlog
+2024-06-01T14:49:36.328736900 - [mary] -> auditlog
+2024-06-01T14:55:09.990212600 - [Anonymous] -> login
+2024-06-01T14:55:23.458758400 - [mary] -> auditlog
+2024-06-01T14:55:35.576463100 - [mary] -> nextpage
+2024-06-01T14:56:00.926241200 - [mary] -> nextpage
+2024-06-01T15:00:51.894715300 - [mary] -> list songs
+2024-06-01T15:00:57.687654 - [mary] -> list playlists
+2024-06-01T15:01:00.788512100 - [mary] -> auditlog
+2024-06-01T15:08:04.522885900 - [mary] -> login (Success: true)
+2024-06-01T15:08:06.973442800 - [mary] -> auditlog (Success: false)
+2024-06-01T15:08:31.331140300 - [mary] -> close_auditlog (Success: true)
+2024-06-01T15:08:35.131711400 - [mary] -> list songs (Success: false)
+2024-06-01T15:08:35.135740 - [mary] -> list songs (Success: true)
+2024-06-01T15:08:41.753864900 - [mary] -> list playlists (Success: false)
+2024-06-01T15:08:41.754857 - [mary] -> list playlists (Success: true)
+2024-06-01T15:08:44.896184400 - [mary] -> auditlog (Success: false)
+2024-06-01T15:15:30.106821400 - [mary] -> login (Success: true)
+2024-06-01T15:15:33.441580900 - [mary] -> list songs (Success: false)
+2024-06-01T15:15:33.446598200 - [mary] -> list songs (Success: true)
+2024-06-01T15:15:38.440207800 - [mary] -> list playlists (Success: false)
+2024-06-01T15:15:38.440207800 - [mary] -> list playlists (Success: true)
+2024-06-01T15:15:42.571773400 - [mary] -> auditlog (Success: false)
+2024-06-01T15:17:12.367835100 - [mary] -> close_auditlog (Success: true)
+2024-06-01T15:17:16.801400600 - [mary] -> list ossd (Success: false)
+2024-06-01T15:17:16.801400600 - [mary] -> list ossd (Success: false)
+2024-06-01T15:17:21.537440300 - [mary] -> auditlog (Success: false)
+2024-06-01T17:28:56.538509800 - [gabi] -> login (Success: true)
+2024-06-01T17:28:59.969821500 - [gabi] -> list songs (Success: false)
+2024-06-01T17:28:59.974829800 - [gabi] -> list songs (Success: true)
+2024-06-01T17:29:02.162839900 - [gabi] -> logout (Success: false)
+2024-06-01T17:29:20.420123900 - [mary] -> login (Success: true)
+2024-06-01T17:29:23.531301200 - [mary] -> auditlog (Success: false)
+2024-06-01T17:38:46.003576200 - [gabi] -> login (Success: true)
+2024-06-01T17:38:49.565982300 - [gabi] -> list playlists (Success: false)
+2024-06-01T17:38:49.566983500 - [gabi] -> list playlists (Success: true)
+2024-06-01T17:38:55.632909500 - [gabi] -> list songs (Success: false)
+2024-06-01T17:38:55.637908900 - [gabi] -> list songs (Success: true)
+2024-06-01T17:39:50.073120700 - [gabi] -> create playlist (Success: false)
+2024-06-01T17:39:56.339487100 - [gabi] -> create playlist (Success: true)
+2024-06-01T17:40:02.318994 - [gabi] -> list playlists (Success: false)
+2024-06-01T17:40:02.322494600 - [gabi] -> list playlists (Success: true)
+2024-06-01T17:49:44.975901800 - [gabi] -> login (Success: true)
+2024-06-01T17:49:47.397311600 - [gabi] -> list songs (Success: false)
+2024-06-01T17:49:47.404299500 - [gabi] -> list songs (Success: true)
+2024-06-01T17:49:52.184220900 - [gabi] -> list playlists (Success: false)
+2024-06-01T17:50:06.555044800 - [gabi] -> list playlists (Success: true)
+2024-06-01T17:50:23.426692200 - [gabi] -> create playlist (Success: false)
+2024-06-01T17:50:25.836720200 - [gabi] -> create playlist (Success: true)
+2024-06-01T17:50:31.463443800 - [gabi] -> list playlists (Success: false)
+2024-06-01T17:50:34.977537100 - [gabi] -> list playlists (Success: false)
+2024-06-01T17:50:40.421994300 - [gabi] -> add song to playlist (Success: false)
+2024-06-01T17:50:56.336908100 - [gabi] -> add song to playlist (Success: true)
+2024-06-01T17:51:00.914216900 - [gabi] -> list playlists (Success: false)
+2024-06-01T17:51:16.412876900 - [gabi] -> list playlists (Success: true)
+2024-06-01T17:51:28.004708800 - [gabi] -> list playlists (Success: false)
+2024-06-01T17:51:48.072786200 - [gabi] -> list playlists (Success: true)
+2024-06-01T18:25:25.462784600 - [mary] -> login (Success: true)
+2024-06-01T18:25:29.816167800 - [mary] -> list songs (Success: false)
+2024-06-01T18:25:29.821187700 - [mary] -> list songs (Success: true)
+2024-06-01T18:25:39.082929900 - [mary] -> add song to playlist (Success: false)
+2024-06-01T18:25:58.968174 - [mary] -> add song to playlist (Success: false)
+2024-06-01T18:26:08.336748500 - [mary] -> listplaylists (Success: false)
+2024-06-01T18:26:08.336748500 - [mary] -> listplaylists (Success: false)
+2024-06-01T18:26:14.736190900 - [mary] -> list playlists (Success: false)
+2024-06-01T18:26:19.211732300 - [mary] -> list playlists (Success: false)
+2024-06-01T18:26:41.830610400 - [mary] -> create playlist (Success: false)
+2024-06-01T18:26:57.173023700 - [mary] -> create playlist (Success: true)
+2024-06-01T18:27:04.226955900 - [mary] -> create playlist (Success: false)
+2024-06-01T18:27:06.370283700 - [mary] -> create playlist (Success: true)
+2024-06-01T18:27:12.657860200 - [mary] -> list playlists (Success: false)
+2024-06-01T18:27:32.323397200 - [mary] -> list playlists (Success: true)
+2024-06-01T18:27:43.590800500 - [mary] -> add song to playlist (Success: false)
+2024-06-01T18:28:02.927019800 - [mary] -> add song to playlist (Success: true)
+2024-06-01T18:33:26.443570900 - [mary] -> login (Success: true)
+2024-06-01T18:33:30.758210900 - [mary] -> list songs (Success: false)
+2024-06-01T18:33:30.764212 - [mary] -> list songs (Success: true)
+2024-06-01T18:33:36.137866100 - [mary] -> list playlists (Success: false)
+2024-06-01T18:33:40.796995400 - [mary] -> list playlists (Success: false)
+2024-06-01T18:33:46.553561300 - [mary] -> create playlist (Success: false)
+2024-06-01T18:33:48.330371700 - [mary] -> create playlist (Success: true)
+2024-06-01T18:33:56.276483300 - [mary] -> list playlists (Success: false)
+2024-06-01T18:34:04.984147100 - [mary] -> list playlists (Success: false)
+2024-06-01T18:34:06.659086600 - [mary] -> list songs (Success: false)
+2024-06-01T18:34:06.659086600 - [mary] -> list songs (Success: true)
+2024-06-01T18:34:10.795745800 - [mary] -> add song to playlist (Success: false)
+2024-06-01T18:34:29.157673200 - [mary] -> add song to playlist (Success: false)
+2024-06-01T18:34:42.622919900 - [mary] -> add byName KFC 7 8 (Success: false)
+2024-06-01T18:34:42.622919900 - [mary] -> add byName KFC 7 8 (Success: false)
+2024-06-01T18:35:44.277693 - [gabi] -> login (Success: true)
+2024-06-01T18:35:48.782279400 - [gabi] -> create playlist (Success: false)
+2024-06-01T18:35:50.175187500 - [gabi] -> create playlist (Success: true)
+2024-06-01T18:35:54.711173500 - [gabi] -> list playlists (Success: false)
+2024-06-01T18:35:58.913423300 - [gabi] -> list playlists (Success: false)
+2024-06-01T18:36:02.822699100 - [gabi] -> list songs (Success: false)
+2024-06-01T18:36:02.827716200 - [gabi] -> list songs (Success: true)
+2024-06-01T18:36:16.224277 - [gabi] -> add song to playlist (Success: false)
+2024-06-01T18:36:30.723571700 - [gabi] -> add song to playlist (Success: true)
+2024-06-01T18:36:59.957370200 - [gabi] -> add byName Despacito 2613b115-e352-4876-a2e7-0a2bd4358777 (Success: false)
+2024-06-01T18:36:59.958362100 - [gabi] -> add byName Despacito 2613b115-e352-4876-a2e7-0a2bd4358777 (Success: false)
+2024-06-01T18:37:18.255909100 - [gabi] -> add song to playlist (Success: false)
+2024-06-01T18:37:24.710319300 - [gabi] -> add song to playlist (Success: false)
+2024-06-01T18:37:43.092511200 - [gabi] -> add song to playlist (Success: false)
+2024-06-01T18:37:55.092795600 - [gabi] -> add song to playlist (Success: true)
+2024-06-01T19:35:04.391591800 - [gabi] -> LOGIN (Success: true)
+2024-06-01T19:35:10.091130200 - [gabi] -> list playlists (Success: false)
+2024-06-01T19:35:45.226962800 - [gabi] -> list playlists (Success: false)
+2024-06-01T19:35:51.274594900 - [gabi] -> list songs (Success: false)
+2024-06-01T19:35:51.279594900 - [gabi] -> list songs (Success: true)
+2024-06-01T19:35:56.910027400 - [gabi] -> create playlist (Success: false)
+2024-06-01T19:35:58.224572500 - [gabi] -> create playlist (Success: true)
+2024-06-01T19:36:02.377568100 - [gabi] -> list playlists (Success: false)
+2024-06-01T19:36:13.267017400 - [gabi] -> list playlists (Success: true)
+2024-06-01T19:36:23.279179 - [gabi] -> add song to playlist (Success: false)
+2024-06-01T19:36:39.620227600 - [gabi] -> add song to playlist (Success: false)
+2024-06-01T19:36:47.585260 - [gabi] -> add song to playlist (Success: false)
+2024-06-01T19:36:57.694201600 - [gabi] -> add song to playlist (Success: false)
+2024-06-01T19:44:44.810949900 - [gabi] -> login (Success: true)
+2024-06-01T19:44:49.554240100 - [gabi] -> list playlists (Success: false)
+2024-06-01T19:44:55.374634500 - [gabi] -> list playlists (Success: false)
+2024-06-01T19:45:02.445543800 - [gabi] -> create playlist (Success: false)
+2024-06-01T19:45:18.992014900 - [gabi] -> create playlist (Success: true)
+2024-06-01T19:45:26.360726900 - [gabi] -> list songs (Success: false)
+2024-06-01T19:45:26.365717 - [gabi] -> list songs (Success: true)
+2024-06-01T19:45:57.842965400 - [gabi] -> add song to playlist (Success: false)
+2024-06-01T19:46:14.091937300 - [gabi] -> add song to playlist (Success: false)
+2024-06-01T21:56:46.027143300 - [gabi] -> login (Success: true)
+2024-06-01T21:56:49.419146600 - [gabi] -> logout (Success: false)
+2024-06-01T21:57:08.153600900 - [gabiiii] -> login (Success: true)
+2024-06-01T21:57:09.957180300 - [gabiiii] -> exit (Success: false)
+2024-06-01T21:57:23.003906400 - [gabi] -> login (Success: true)
+2024-06-01T21:57:24.523748400 - [gabi] -> logout (Success: false)
+2024-06-01T21:57:29.886341400 - [gabiiii] -> login (Success: true)
+2024-06-01T21:57:41.254503900 - [gabiiii] -> list songs (Success: false)
+2024-06-01T21:57:41.260022600 - [gabiiii] -> list songs (Success: true)
+2024-06-01T21:59:53.116974300 - [gabiiii] -> list playlists (Success: false)
+2024-06-01T21:59:57.552124700 - [gabiiii] -> list playlists (Success: false)
+2024-06-01T22:00:00.751755900 - [gabiiii] -> create playlist (Success: false)
+2024-06-01T22:00:02.722297700 - [gabiiii] -> create playlist (Success: true)
+2024-06-01T22:00:06.087286100 - [gabiiii] -> list playlists (Success: false)
+2024-06-01T22:00:10.094211600 - [gabiiii] -> list playlists (Success: false)
+2024-06-01T22:00:26.873211300 - [gabiiii] -> add song to playlist (Success: false)
+2024-06-01T22:00:39.212220 - [gabiiii] -> add song to playlist (Success: false)
+2024-06-01T22:02:09.124984400 - [gabi] -> login (Success: true)
+2024-06-01T22:02:14.193003200 - [gabi] -> list playlists (Success: false)
+2024-06-01T22:02:18.630109200 - [gabi] -> list playlists (Success: false)
+2024-06-01T22:02:21.143037100 - [gabi] -> logout (Success: false)
+2024-06-01T22:02:32.123921200 - [gabiiii] -> login (Success: true)
+2024-06-01T22:02:34.717021600 - [gabiiii] -> list playlists (Success: false)
+2024-06-01T22:02:42.566491500 - [gabiiii] -> list playlists (Success: false)
+2024-06-01T22:02:47.908039900 - [gabiiii] -> add song to playlist (Success: false)
+2024-06-01T22:06:12.264177700 - [gabiiii] -> login (Success: true)
+2024-06-01T22:06:17.185372800 - [gabiiii] -> add song to playlist (Success: false)
+2024-06-01T22:07:13.587166700 - [gabiiii] -> login (Success: true)
+2024-06-01T22:07:17.026526100 - [gabiiii] -> add song to playlist (Success: false)
+2024-06-01T22:07:56.435282 - [gabiiii] -> login (Success: true)
+2024-06-01T22:07:59.500008800 - [gabiiii] -> add song to playlist (Success: false)
+2024-06-01T22:08:04.613677300 - [gabiiii] -> add song to playlist (Success: false)
+2024-06-01T22:08:11.260787100 - [gabiiii] -> list playlists (Success: false)
+2024-06-01T22:08:19.161980 - [gabiiii] -> list playlists (Success: true)
+2024-06-01T22:08:51.399013700 - [gabiiii] -> login (Success: true)
+2024-06-01T22:08:55.056535 - [gabiiii] -> add song to playlist (Success: false)
+2024-06-01T22:08:58.042853900 - [gabiiii] -> add song to playlist (Success: false)
+2024-06-01T22:11:50.298371100 - [gabiiii] -> login (Success: true)
+2024-06-01T22:11:54.470358900 - [gabiiii] -> list playlists (Success: false)
+2024-06-01T22:12:00.684152300 - [gabiiii] -> list playlists (Success: true)
+2024-06-01T22:20:21.306769500 - [gabiiii] -> login (Success: true)
+2024-06-01T22:20:25.708514400 - [gabiiii] -> list playlists (Success: false)
+2024-06-01T22:21:53.949920900 - [gabiiii] -> login (Success: true)
+2024-06-01T22:21:59.328306100 - [gabiiii] -> list playlists (Success: false)
+2024-06-01T22:22:07.428600700 - [gabiiii] -> list playlists (Success: false)
+2024-06-01T22:22:12.137754100 - [gabiiii] -> list playlists (Success: false)
+2024-06-01T22:22:13.568665600 - [gabiiii] -> list playlists (Success: false)
+2024-06-01T22:22:19.049583100 - [gabiiii] -> list playlists (Success: false)
+2024-06-01T22:22:22.718597300 - [gabiiii] -> list playlists (Success: true)
+2024-06-01T22:22:27.102591500 - [gabiiii] -> list_playlists (Success: false)
+2024-06-01T22:22:27.102591500 - [gabiiii] -> list_playlists (Success: false)
+2024-06-01T22:22:31.539163900 - [gabiiii] -> list playlists (Success: false)
+2024-06-01T22:22:39.801481900 - [gabiiii] -> list playlists (Success: true)
+2024-06-01T22:22:54.718359800 - [gabiiii] -> logout (Success: false)
+2024-06-01T22:23:38.077411300 - [gabiiii] -> login (Success: true)
+2024-06-01T22:23:45.692781800 - [gabiiii] -> create song (Success: false)
+2024-06-01T22:23:56.536865200 - [gabiiii] -> create song (Success: true)
+2024-06-01T22:23:59.878778600 - [gabiiii] -> list songs (Success: false)
+2024-06-01T22:23:59.885299500 - [gabiiii] -> list songs (Success: true)
+2024-06-01T22:24:17.181490600 - [gabiiii] -> auditlog (Success: false)
+2024-06-01T22:24:32.603387300 - [gabiiii] -> close_auditlog (Success: true)
+2024-06-01T22:25:56.423964500 - [gabiiii] -> login (Success: true)
+2024-06-01T22:26:02.947693300 - [gabiiii] -> list playlists (Success: false)
+2024-06-01T22:26:11.365770600 - [gabiiii] -> list playlists (Success: false)
+2024-06-01T22:26:13.713521200 - [gabiiii] -> add song to playlist (Success: false)
+2024-06-01T22:26:17.464888700 - [gabiiii] -> add song to playlist (Success: false)
+2024-06-01T22:29:25.589484400 - [gabiiii] -> login (Success: true)
+2024-06-01T22:29:29.960975 - [gabiiii] -> list playlists (Success: false)
+2024-06-01T22:29:37.802786700 - [gabiiii] -> list playlists (Success: false)
+2024-06-01T22:29:49.435601700 - [gabiiii] -> list playlists (Success: false)
+2024-06-01T22:29:55.592160200 - [gabiiii] -> list playlists (Success: true)
+2024-06-01T22:30:01.301071600 - [gabiiii] -> list playlists (Success: false)
+2024-06-01T22:30:08.969929300 - [gabiiii] -> list playlists (Success: true)
+2024-06-01T22:30:26.624485800 - [gabiiii] -> add song to playlist (Success: false)
+2024-06-01T22:30:37.392769400 - [gabiiii] -> add song to playlist (Success: false)
+2024-06-01T22:30:47.127686800 - [gabiiii] -> create song (Success: false)
+2024-06-01T22:30:55.546426100 - [gabiiii] -> create song (Success: true)
+2024-06-01T22:30:59.735648500 - [gabiiii] -> create song (Success: false)
+2024-06-01T22:31:11.075929600 - [gabiiii] -> create song (Success: true)
+2024-06-01T22:31:19.546590500 - [gabiiii] -> add song to playlist (Success: false)
+2024-06-01T22:31:36.021000700 - [gabiiii] -> add song to playlist (Success: false)
+2024-06-01T22:32:00.822793100 - [gabiiii] -> auditlog (Success: false)
+2024-06-01T22:33:11.418787300 - [gabiiii] -> close_auditlog (Success: true)
+2024-06-01T22:33:12.258848500 - [gabiiii] -> quit (Success: false)
+2024-06-01T22:33:12.258848500 - [gabiiii] -> quit (Success: false)
+2024-06-01T22:33:14.339960900 - [gabiiii] -> exit (Success: false)
+2024-06-01T22:33:23.657457 - [gabiiii] -> login (Success: true)
+2024-06-01T22:33:26.074840700 - [gabiiii] -> auditlog (Success: false)
+2024-06-01T22:33:37.841615200 - [gabiiii] -> close_auditlog (Success: true)
+2024-06-01T22:33:42.033540600 - [gabiiii] -> auditlog (Success: false)
+2024-06-01T22:34:45.381640400 - [gabiiii] -> login (Success: true)
+2024-06-01T22:34:48.195169500 - [gabiiii] -> auditlog (Success: false)
+2024-06-01T22:37:07.837973900 - [gabiiii] -> auditlog (Success: false)
+2024-06-01T22:38:16.292256800 - [gabiiii] -> login (Success: true)
+2024-06-01T22:39:23.604352400 - [gabiiii] -> login (Success: true)
+2024-06-01T22:39:25.982223500 - [gabiiii] -> list songs (Success: true)
+2024-06-01T22:39:35.078093400 - [gabiiii] -> create playlist (Success: true)
+2024-06-01T22:40:05.051022600 - [gabiiii] -> close_auditlog (Success: true)
+2024-06-01T22:41:16.951856100 - [gabiiii] -> login (Success: true)
+2024-06-01T22:41:18.928725500 - [gabiiii] -> craete playlist (Success: false)
+2024-06-01T22:41:23.588129500 - [gabiiii] -> create playlist (Success: false)
+2024-06-01T22:42:44.699325100 - [gabiiii] -> close_auditlog (Success: true)
+2024-06-01T22:43:22.937641600 - [gabiiii] -> savejson (Success: true)
+2024-06-01T23:07:20.042924700 - [gabiiii] -> login (Success: true)
+2024-06-01T23:07:31.738572400 - [gabiiii] -> savejson (Success: true)
+2024-06-01T23:08:40.054239600 - [gabiiii] -> list playlists (Success: false)
+2024-06-01T23:10:55.141909800 - [gabiiii] -> login (Success: true)
+2024-06-01T23:11:04.251735600 - [gabiiii] -> loadjson (Success: true)
+2024-06-01T23:11:51.514428 - [gabiiii] -> login (Success: true)
+2024-06-01T23:12:06.278402900 - [gabiiii] -> loadjson (Success: true)
+2024-06-01T23:12:18.081716700 - [gabiiii] -> list playlists (Success: true)
+2024-06-01T23:13:51.888473 - [gabiiii] -> login (Success: true)
